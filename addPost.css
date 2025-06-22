@@ -1,0 +1,208 @@
+/* Medium-style header */
+.medium-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px 0 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.medium-header-left {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.medium-logo {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.medium-username-sub {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+  vertical-align: sub;
+  margin-left: 6px;
+}
+.medium-user-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6b47dc;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  box-shadow: 0 2px 8px rgba(107, 71, 220, 0.08);
+  transition: background 0.2s;
+}
+.user-icon:hover {
+  background: #5431b6;
+}
+.medium-image-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #ececec;
+  color: #333;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 8px;
+}
+.medium-image-btn:hover {
+  background: #d6d6d6;
+  color: #111;
+}
+.user-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  min-width: 140px;
+  overflow: hidden;
+  z-index: 100;
+}
+.user-dropdown.show {
+  display: block;
+}
+.user-dropdown a {
+  display: block;
+  padding: 12px 20px;
+  color: #222;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.user-dropdown a:hover {
+  background: #f2f2f2;
+}
+
+/* Main content */
+.medium-main {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  padding: 0 24px;
+}
+.medium-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.medium-title {
+  font-size: 2.8rem;
+  font-family: "Georgia", serif;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin-bottom: 0;
+  background: transparent;
+  color: #222;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  line-height: 1.15;
+  min-height: 3.5em;
+  overflow: hidden;
+}
+.medium-title::placeholder {
+  color: #bdbdbd;
+  font-weight: normal;
+}
+.medium-author {
+  color: #757575;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  margin-top: -16px;
+}
+.medium-content {
+  min-height: 220px;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+  color: #222;
+  font-family: "Georgia", serif;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.medium-content::placeholder {
+  color: #bdbdbd;
+}
+.medium-form-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.medium-category {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  font-size: 1rem;
+}
+.medium-image-input {
+  display: none;
+}
+.medium-publish {
+  align-self: flex-end;
+  background: #1a8917;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(26, 137, 23, 0.08);
+  transition: background 0.2s;
+}
+.medium-publish:hover {
+  background: #166d13;
+}
+
+/* Remove old .medium-image-label if present */
+.medium-image-label {
+  display: none;
+}
+
+.medium-username {
+  margin-left: 16px;
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 16px;
+  transition: background 0.2s;
+}
+.medium-username:hover {
+  background: #f2f2f2;
+}
+
+.medium-title::-webkit-scrollbar {
+  height: 6px;
+}
